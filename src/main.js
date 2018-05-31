@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import r10VueMqtt from './index.js'
+import r10VueMqtt from './plugins/r10-vue-mqtt.js'
 
 Vue.use(r10VueMqtt, {
   hubName: '$mqttHub',

@@ -21,7 +21,6 @@ const install = function (Vue, opts = {}) {
   })
 
   client.on('message', (topic, message, packet) => {
-    console.log('received message')
     hubVM.$emit(topic, message.toString())
   })
 
