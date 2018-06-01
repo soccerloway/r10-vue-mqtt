@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <button @click="tPublish">Publish testMqtt</button>
+    <p><img src="./assets/logo.png"></p>
+    <p><button @click="tPublish">Publish testMqtt</button></p>
   </div>
 </template>
 
