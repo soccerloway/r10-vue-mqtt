@@ -7,13 +7,13 @@ A Vue plugin based on MQTT.js to make sub/pub messages easier.
 3.通过对`hubNameConf`配置对象进行proxy实现对topic的订阅/解除订阅.
 
 
-#advantages:
+# advantages:
 1.以vue插件方式全局建立连接，使用简单，配置简单；
 2.避免在业务代码中频繁使用MQTT.js建立连接、sub/pub等造成代码冗余；
 3.在vue组件的created、beforedestroy生命周期hook中进行了合理处理，避免单独使用MQTT.js造成的事件控制不当的问题.
 4.可支持多个broker的场景，每条event hub相互独立.
 
-#shortages:
+# shortages:
 1.未暴露MQTT.js中client.on接口，如需要使用到其他事件，需要自行对plugin进行扩展；
 2.不支持进行定义`topic`规则时，加入`#`通配符.
 
